@@ -24,7 +24,7 @@ defmodule Timber.Mixfile do
       app: :timber,
       name: "Timber",
       version: @version,
-      elixir: "~> 1.3",
+      elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env()),
       description: @project_description,
       source_url: @source_url,
@@ -188,7 +188,7 @@ defmodule Timber.Mixfile do
       # version requirement, you may run into an issue where code fails.
 
       # We support Ecto after 2.0.0 but before 2.3.0
-      {:ecto, ">= 2.0.0 and < 2.3.0", optional: true},
+      {:ecto_sql, "~> 3.0.0", optional: true},
       # We support Phoenix after 1.2.0 but before 1.4.0
       {:phoenix, ">= 1.2.0 and < 1.4.0", optional: true},
       # We support Plug after 1.2.0 but before 1.6.0
